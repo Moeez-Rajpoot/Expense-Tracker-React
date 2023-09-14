@@ -8,7 +8,26 @@
   flex-wrap: wrap;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   align-items: center;
+  margin: 15px;
 }
+
+.Expense-item-date{
+
+  flex: 0.14;
+  text-align: center;
+  border-radius: 10px;
+  border: 3px solid purple;
+
+}
+.Expense-item-date h3:nth-child(2){
+
+  font-size: 2em;
+}
+.Expense-item-date h3{
+  
+  margin: 15px;
+}
+
 .Expense-item-details {
   align-items: center;
   display: flex;
@@ -41,12 +60,33 @@
     align-items: center;
   }
 
+  .Expense-item-date{
+
+    width: 100%;
+    flex: 1;
+    display: flex;
+    margin-bottom: 10px;
+    text-align: center;
+    border-radius: 10px;
+    border: 3px solid purple;
+  
+  }
+  .Expense-item-date h3:nth-child(2){
+  
+    font-size: 1.5em;
+  }
+  .Expense-item-date h3{
+    
+    flex: 1;
+    justify-content: space-evenly;
+  }
+
   .Expense-item-details {
     align-items: center;
     display: flex;
     flex: 1;
     justify-content: space-between;
-    margin: 0px 0px 0px 30px;
+    margin: 0px 0px 0px 25px;
     color: white;
     font-size: 1.2rem;
   }
