@@ -8,10 +8,10 @@ function Card(props) {
 
     
     <div className="card"> {props.children} </div>
+
+
       
   )
 }
-Card.propTypes = {
-    children: PropTypes.node.isRequired,
-  };
+Card.PropTypes ={}
 export default Card;
