@@ -6,7 +6,7 @@ function KeyConcept() {
     const content = [
         {
             id: 1,
-            content: "Components are independent and reusable bits of code. They serve the same purpose as JavaScript functions, but work in isolation and return HTML. Components come in two types, Class components and Function components, in this tutorial we will concentrate on Function components.",
+            content: "Components are independent and reusable bits of code. They serve the same purpose as JavaScript functions, but work in isolation and return HTML. Components come in two types, Class components and Function components",
             name: "Components",
             img: "src/assets/components.png",
 
