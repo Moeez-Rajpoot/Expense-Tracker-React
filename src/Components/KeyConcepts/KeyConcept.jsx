@@ -9,13 +9,13 @@ function KeyConcept() {
             content: "Components are independent and reusable bits of code. They serve the same purpose as JavaScript functions, but work in isolation and return HTML. Components come in two types, Class components and Function components",
             name: "Components",
             img: "src/assets/components.png",
-
-        },
+ 
+        }, 
         {
             id: 2,
             content: "The state is a built-in React object that is used to contain data or information about the component. A component's state can change over time; whenever it changes, the component re-renders.",
             name: "State",
-            img: "src/assets/state.png"
+            img: "src/assets/state.png"   
         },
         {
             id: 3,
