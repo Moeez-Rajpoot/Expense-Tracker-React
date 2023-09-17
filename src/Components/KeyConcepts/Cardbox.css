@@ -9,12 +9,19 @@
     height: 400px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: white;
-    border: 1px solid rgb(255, 255, 255);
+    border: 1px solid rgba(255, 255, 255, 0.527);
     padding: 20px;
     background-color: rgb(12, 2, 68);
-    box-shadow: 2px 2px 20px 10px purple;
+    box-shadow: 2px 2px 20px 5px purple;
     border-radius: 10px;
 
+}
+
+.rectangle:hover{
+
+    transform: scale(1.02);
+    transition: 0.5s;
+    box-shadow: 2px 2px 20px 5px rgb(255, 0, 255);
 }
 
 .img {
@@ -32,9 +39,6 @@
 
 .content p {
 
-    color: rgba(255, 255, 255, 0.623);
-
-
-    
+    color: rgba(255, 255, 255, 0.623);  
 }
 
