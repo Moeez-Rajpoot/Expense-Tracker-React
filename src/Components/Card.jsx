@@ -13,5 +13,7 @@ function Card(props) {
       
   )
 }
-Card.PropTypes ={}
+Card.propTypes = {
+  children: PropTypes.node.isRequired
+}
 export default Card;
