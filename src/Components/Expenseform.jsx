@@ -18,13 +18,8 @@ function Expenseform() {
             </div>
             
                 <button className='button-field' type="submit">Add Expense</button>
-    
         </form>
 
-
-
-
-      
     </>
   )
 }
