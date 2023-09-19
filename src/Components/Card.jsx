@@ -8,9 +8,6 @@ function Card(props) {
 
     
     <div className="card"> {props.children} </div>
-
-
-      
   )
 }
 Card.propTypes = {
