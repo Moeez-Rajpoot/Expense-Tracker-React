@@ -1,321 +1,283 @@
 .form-main {
-    background-color: #021930ff;
+  background-color: #021930ff;
+  border: 2px solid white;
+  border-radius: 10px;
+  padding: 10px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Two columns */
+  grid-template-rows: repeat(2, 1fr); /* Two rows */
+  width: 70vw;
+  height: 25vh;
+  margin-top: 20px;
+}
+
+.title-field {
+  border: 2px solid purple;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  height: 80%;
+  width: 90%;
+  margin-left: 15px;
+}
+.title-field label {
+  background-color: rgb(0, 0, 0);
+  width: 20%;
+  font-size: 20px;
+  height: 100%;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.title-field input {
+  width: 80%;
+  height: 100%;
+  border: none;
+  outline: none;
+  font-size: 20px;
+  padding-left: 10px;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+::placeholder {
+  font-size: 20px;
+  color: rgba(0, 0, 0, 0.377);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.price-field {
+  border: 2px solid purple;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  height: 80%;
+  width: 90%;
+  margin-left: 15px;
+}
+
+.price-field label {
+  background-color: rgb(0, 0, 0);
+  width: 20%;
+  font-size: 20px;
+  height: 100%;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.price-field input {
+  width: 80%;
+  height: 100%;
+  border: none;
+  outline: none;
+  font-size: 20px;
+  padding-left: 10px;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+.date-field {
+  border: 2px solid purple;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  height: 80%;
+  width: 90%;
+  margin-left: 15px;
+}
+
+.date-field label {
+  background-color: rgb(0, 0, 0);
+  width: 20%;
+  border: 2px;
+  font-size: 20px;
+  height: 100%;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.date-field input {
+  width: 80%;
+  height: 100%;
+  border: none;
+  outline: none;
+  font-size: 20px;
+  padding-left: 10px;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+.button-field {
+  border: 2px solid rgb(255, 255, 255);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  border-radius: 10px;
+  height: 60%;
+  background-color: purple;
+  color: white;
+  font-size: 1em;
+  width: 40%;
+  margin-left: 15px;
+  margin-top: 10px;
+  white-space: nowrap;
+  padding: 10px;
+}
+
+.button-field:hover {
+  background-color: black;
+}
+
+@media screen and (min-width: 350px) and (max-width: 762px) {
+  .form-main {
+    background-color: #120122ff;
     border: 2px solid white;
     border-radius: 10px;
     padding: 10px;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Two columns */
-    grid-template-rows: repeat(2, 1fr);    /* Two rows */
-    width: 70vw;
-    height: 25vh;
+    display: flex;
+    flex-direction: column;
+    width: 90vw;
+    height: 30vh;
+    align-items: center;
     margin-top: 20px;
+    gap: 5px;
   }
 
-  .title-field{
-
+  .title-field {
     border: 2px solid purple;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
     border-radius: 10px;
     display: flex;
     align-items: center;
     height: 80%;
     width: 90%;
-    margin-left: 15px;
   }
-  .title-field label{
-
-    background-color: rgb(0, 0, 0);
+  .title-field label {
+    background-color: black;
     width: 20%;
-    font-size: 20px;
+    font-size: 15px;
     height: 100%;
-    border-top-left-radius: 8px ;
-    border-bottom-left-radius: 8px ;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
     align-items: center;
     display: flex;
+
     justify-content: center;
-    
   }
 
-  .title-field input{
+  .title-field input {
     width: 80%;
     height: 100%;
     border: none;
     outline: none;
-    font-size: 20px;
+    font-size: 15px;
     padding-left: 10px;
-    border-top-right-radius: 8px ;
-    border-bottom-right-radius: 8px ;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
   }
-  ::placeholder{
-    font-size: 20px;
+  ::placeholder {
+    font-size: 13px;
     color: rgba(0, 0, 0, 0.377);
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   }
 
-    .price-field{
-    
-        border: 2px solid purple;
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-        border-radius: 10px;
-        display: flex;
-        align-items: center;
-        height: 80%;
-        width: 90%;
-        margin-left: 15px;
-    }
-
-    .price-field label{
-
-        background-color: rgb(0, 0, 0);
-        width: 20%;
-        font-size: 20px;
-        height: 100%;
-        border-top-left-radius: 8px ;
-        border-bottom-left-radius: 8px ;
-        align-items: center;
-        display: flex;
-        justify-content: center;
-        
-    }
-
-    .price-field input{
-
-        width: 80%;
-        height: 100%;
-        border: none;
-        outline: none;
-        font-size: 20px;
-        padding-left: 10px;
-        border-top-right-radius: 8px ;
-        border-bottom-right-radius: 8px ;
-    }
-
-    .date-field{
-
-        border: 2px solid purple;
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-        border-radius: 10px;
-        display: flex;
-        align-items: center;
-        height: 80%;
-        width: 90%;
-        margin-left: 15px;
-    }
-
-    .date-field label{
-
-        background-color: rgb(0, 0, 0);
-        width: 20%;
-        border: 2px ;
-        font-size: 20px;
-        height: 100%;
-        border-top-left-radius: 8px ;
-        border-bottom-left-radius: 8px ;
-        align-items: center;
-        display: flex;
-        justify-content: center;
-        
-    }
-
-    .date-field input{
-
-        width: 80%;
-        height: 100%;
-        border: none;
-        outline: none;
-        font-size: 20px;
-        padding-left: 10px;
-        border-top-right-radius: 8px ;
-        border-bottom-right-radius: 8px ;
-    }
-  
-
-    .button-field{
-
-        border: 2px solid rgb(255, 255, 255);
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-        border-radius: 10px;
-        height: 60%;
-        background-color: purple;
-        color: white;
-        font-size: 1em;
-        width: 40%;
-        margin-left: 15px;
-        margin-top: 10px;
-        white-space: nowrap;
-        padding: 10px;
-    }
-
-    .button-field:hover{
-
-        background-color: black;
-
-        
-    }
-  
-  @media screen and (min-width: 350px) and (max-width: 762px) {
-
-    .form-main {
-        background-color: #120122ff;
-        border: 2px solid white;
-        border-radius: 10px;
-        padding: 10px;
-        display: flex;
-        flex-direction: column;
-        width: 90vw;
-        height: 30vh;
-        align-items: center;
-        margin-top: 20px;
-        gap: 5px;
-      }
-    
-      .title-field{
-    
-        border: 2px solid purple;
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-        border-radius: 10px;
-        display: flex;
-        align-items: center;
-        height: 80%;
-        width: 90%;
-      }
-      .title-field label{
-    
-        background-color: black;
-        width: 20%;
-        font-size: 15px;
-        height: 100%;
-        border-top-left-radius: 8px ;
-        border-bottom-left-radius: 8px ;
-        align-items: center;
-        display: flex;
-        
-        justify-content: center;
-        
-      }
-    
-      .title-field input{
-        width: 80%;
-        height: 100%;
-        border: none;
-        outline: none;
-        font-size: 15px;
-        padding-left: 10px;
-        border-top-right-radius: 8px ;
-        border-bottom-right-radius: 8px ;
-      }
-      ::placeholder{
-        font-size: 13px;
-        color: rgba(0, 0, 0, 0.377);
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-      }
-    
-        .price-field{
-        
-            border: 2px solid purple;
-            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-            border-radius: 10px;
-            display: flex;
-            align-items: center;
-            height: 80%;
-            width: 90%;
-        }
-    
-        .price-field label{
-    
-            background-color: black;
-            width: 20%;
-            font-size: 13px;
-            height: 100%;
-            border-top-left-radius: 8px ;
-            border-bottom-left-radius: 8px ;
-            align-items: center;
-            display: flex;
-            justify-content: center;
-            
-        }
-    
-        .price-field input{
-    
-            width: 80%;
-            height: 100%;
-            border: none;
-            outline: none;
-            font-size: 15px;
-            padding-left: 10px;
-            border-top-right-radius: 8px ;
-            border-bottom-right-radius: 8px ;
-        }
-    
-        .date-field{
-    
-            border: 2px solid purple;
-            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-            border-radius: 10px;
-            display: flex;
-            align-items: center;
-            height: 80%;
-            width: 90%;
-        }
-    
-        .date-field label{
-    
-            background-color: black;
-            width: 20%;
-            font-size: 15px;
-            height: 100%;
-            border-top-left-radius: 8px ;
-            border-bottom-left-radius: 8px ;
-            align-items: center;
-            display: flex;
-            justify-content: center;
-            
-        }
-    
-        .date-field input{
-    
-            width: 80%;
-            height: 100%;
-            border: none;
-            outline: none;
-            font-size: 13px;
-            padding-left: 10px;
-            border-top-right-radius: 8px ;
-            border-bottom-right-radius: 8px ;
-        }
-
-        
-    .button-field{
-
-      border: 2px solid rgb(255, 255, 255);
-      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-      border-radius: 10px;
-      height: 60%;
-      background-color: purple;
-      color: white;
-      font-size: 1em;
-      width: 50%;
-      margin-left: 15px;
-      margin-top: 5px;
+  .price-field {
+    border: 2px solid purple;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    height: 80%;
+    width: 90%;
   }
 
-
-   
-
-
-
+  .price-field label {
+    background-color: black;
+    width: 20%;
+    font-size: 13px;
+    height: 100%;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
   }
 
-::-webkit-calendar-picker-indicator{
-    background-color: rgb(182, 13, 173);
-    padding: 15px;
-    margin-right: 10px;
-    border: 2px solid rgba(128, 128, 128, 0.404);
-    cursor: pointer;
-    border-radius: 50px;
- 
+  .price-field input {
+    width: 80%;
+    height: 100%;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    padding-left: 10px;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+  }
+
+  .date-field {
+    border: 2px solid purple;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    height: 80%;
+    width: 90%;
+  }
+
+  .date-field label {
+    background-color: black;
+    width: 20%;
+    font-size: 15px;
+    height: 100%;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+  }
+
+  .date-field input {
+    width: 80%;
+    height: 100%;
+    border: none;
+    outline: none;
+    font-size: 13px;
+    padding-left: 10px;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+  }
+
+  .button-field {
+    border: 2px solid rgb(255, 255, 255);
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    border-radius: 10px;
+    height: 60%;
+    background-color: purple;
+    color: white;
+    font-size: 1em;
+    width: 50%;
+    margin-left: 15px;
+    margin-top: 5px;
+  }
 }
-::-webkit-calendar-picker-indicator:hover{
 
-    border: 2px solid rgb(255, 6, 255);
+::-webkit-calendar-picker-indicator {
+  background-color: rgb(182, 13, 173);
+  padding: 15px;
+  margin-right: 10px;
+  border: 2px solid rgba(128, 128, 128, 0.404);
+  cursor: pointer;
+  border-radius: 50px;
+}
+::-webkit-calendar-picker-indicator:hover {
+  border: 2px solid rgb(255, 6, 255);
 }
