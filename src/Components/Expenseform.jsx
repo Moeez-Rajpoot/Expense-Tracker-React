@@ -17,12 +17,27 @@ function Expenseform() {
     setdate(event.target.value);
   }
 
+  function SubmitHandler(event) {
+    event.preventDefault();
+    const expenseData = {
+      title: title,
+      price: price,
+      date: new Date(date),
+    };
+    console.log(expenseData);
+    settitle("");
+    setprice("");
+    setdate("");
+  }
+
   return (
     <>
-      <form className="form-main">
+      <form onSubmit={SubmitHandler} className="form-main">
         <div className="title-field">
           <label>Title</label>
           <input
+            value={title}
+            required={true}
             type="text"
             placeholder="Enter Title Here"
             onChange={TitleChangeHandler}
@@ -31,6 +46,8 @@ function Expenseform() {
         <div className="price-field">
           <label>Price</label>
           <input
+            value={price}
+            required={true}
             type="number"
             min="0.01"
             step="0.01"
@@ -41,6 +58,8 @@ function Expenseform() {
         <div className="date-field">
           <label>Date</label>
           <input
+            value={date}
+            required={true}
             type="date"
             min="2019-01-01"
             max="2023-31-12"
