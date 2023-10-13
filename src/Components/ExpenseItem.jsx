@@ -7,7 +7,7 @@ function ExpenseItem(props) {
   const month = props.expense.date.toLocaleString("en-US", { month: "long" });
   const day = props.expense.date.toLocaleString("en-US", { day: "2-digit" });
   const year = props.expense.date.getFullYear();
-  const price = props.expense.amount;
+  const price = props.expense.price;
   const title = props.expense.title;
 
   // const [val , setval] = useState(title);
@@ -39,7 +39,7 @@ export default ExpenseItem;
 ExpenseItem.propTypes = {
   expense: PropTypes.shape({
     date: PropTypes.instanceOf(Date).isRequired,
-    amount: PropTypes.number.isRequired,
+    price: PropTypes.number.isRequired,
     title: PropTypes.string.isRequired,
   }).isRequired,
 };

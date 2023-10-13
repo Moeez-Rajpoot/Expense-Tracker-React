@@ -1,6 +1,8 @@
 import { useState } from "react";
 import "./Expenseform.css";
-function Expenseform() {
+import PropTypes from 'prop-types'
+
+function Expenseform(props) {
   const [title, settitle] = useState("");
   const [price, setprice] = useState("");
   const [date, setdate] = useState("");
@@ -21,10 +23,11 @@ function Expenseform() {
     event.preventDefault();
     const expenseData = {
       title: title,
-      price: price,
+      price: parseInt(price),
       date: new Date(date),
     };
     console.log(expenseData);
+    props.OnSavaData(expenseData);
     settitle("");
     setprice("");
     setdate("");
@@ -74,5 +77,10 @@ function Expenseform() {
     </>
   );
 }
+
+Expenseform.propTypes = {
+  OnSavaData: PropTypes.func.isRequired,
+};
+
 
 export default Expenseform;

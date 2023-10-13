@@ -1,0 +1,62 @@
+/* ExpenseFilter.css */
+.filter {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 1rem 0rem;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  
+  .custom-dropdown {
+    position: relative;
+    display: inline-block;
+    width: 200px;
+    margin: 10px;
+   
+    
+  }
+  
+  .dropdown-toggle {
+    background: transparent;
+    border: 1px solid #ccc;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .dropdown-toggle.open {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+  
+  .dropdown-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: none;
+    position: absolute;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-top: 0;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+  
+  .dropdown-list.open {
+    display: block;
+  }
+  
+  .dropdown-list li {
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  .dropdown-list li:hover {
+    background: #f0f0f01e;
+  }
+  
+  .dropdown-list .selected {
+    background: #e0e0e02d;
+  }
+  
